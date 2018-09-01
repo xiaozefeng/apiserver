@@ -19,3 +19,24 @@
 {"level":"DEBUG","timestamp":"2018-09-01 21:53:17.717","file":"user/create.go:23","msg":"username is [], password is [12]"}
 {"level":"ERROR","timestamp":"2018-09-01 21:53:17.717","file":"user/create.go:28","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. this is add message, error: username can not found in db: xx.xx.xx.xx"}}
 {"level":"DEBUG","timestamp":"2018-09-01 21:53:17.718","file":"user/create.go:32","msg":"err type is ErrUserNotFound"}
+{"level":"INFO","timestamp":"2018-09-01 22:39:58.189","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-01 22:39:58.200","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-01 22:39:58.205","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-01 22:39:58.206","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-01 22:40:04.685","file":"user/create.go:20","msg":"URL username :admin2"}
+{"level":"INFO","timestamp":"2018-09-01 22:40:04.686","file":"user/create.go:23","msg":"URL key prams desc: test"}
+{"level":"INFO","timestamp":"2018-09-01 22:40:04.686","file":"user/create.go:26","msg":"Header Content-Type: application/json "}
+{"level":"DEBUG","timestamp":"2018-09-01 22:40:04.686","file":"user/create.go:28","msg":"username is: admin , password is admin "}
+{"level":"INFO","timestamp":"2018-09-01 22:40:13.199","file":"user/create.go:20","msg":"URL username :admin2"}
+{"level":"INFO","timestamp":"2018-09-01 22:40:13.200","file":"user/create.go:23","msg":"URL key prams desc: test"}
+{"level":"INFO","timestamp":"2018-09-01 22:40:13.200","file":"user/create.go:26","msg":"Header Content-Type: application/json "}
+{"level":"DEBUG","timestamp":"2018-09-01 22:40:13.200","file":"user/create.go:28","msg":"username is: admin , password is admin "}
+{"level":"INFO","timestamp":"2018-09-01 22:40:14.034","file":"user/create.go:20","msg":"URL username :admin2"}
+{"level":"INFO","timestamp":"2018-09-01 22:40:14.035","file":"user/create.go:23","msg":"URL key prams desc: test"}
+{"level":"INFO","timestamp":"2018-09-01 22:40:14.035","file":"user/create.go:26","msg":"Header Content-Type: application/json "}
+{"level":"DEBUG","timestamp":"2018-09-01 22:40:14.035","file":"user/create.go:28","msg":"username is: admin , password is admin "}
+{"level":"INFO","timestamp":"2018-09-01 22:40:15.146","file":"user/create.go:20","msg":"URL username :admin2"}
+{"level":"INFO","timestamp":"2018-09-01 22:40:15.146","file":"user/create.go:23","msg":"URL key prams desc: test"}
+{"level":"INFO","timestamp":"2018-09-01 22:40:15.147","file":"user/create.go:26","msg":"Header Content-Type: application/json "}
+{"level":"DEBUG","timestamp":"2018-09-01 22:40:15.147","file":"user/create.go:28","msg":"username is: admin , password is admin "}
+{"level":"INFO","timestamp":"2018-09-01 22:45:49.027","file":"config/config.go:53","msg":"Config file changed: /Users/xiaozefeng/go/src/github.com/xiaozefeng/apiserver/conf/config.yaml"}

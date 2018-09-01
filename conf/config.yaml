@@ -3,6 +3,7 @@ addr: :8080
 name: apiserver
 url: http://127.0.0.1:8080
 max_ping_count: 10
+gormlog: true
 log:
   writers: file,stdout
   logger_level: DEBUG
