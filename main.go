@@ -10,6 +10,7 @@ import (
 	"github.com/xiaozefeng/apiserver/router"
 	"net/http"
 	"time"
+	"github.com/xiaozefeng/apiserver/model"
 )
 
 var (
@@ -22,6 +23,9 @@ func main() {
 	if err := config.Init(*cfg); err != nil {
 		panic(err)
 	}
+	// init db
+	model.DB.Init()
+	defer model.DB.Close()
 	// set gin mode
 	gin.SetMode(viper.GetString("runmode"))
 	// Create the  Gin engine.

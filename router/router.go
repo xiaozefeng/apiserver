@@ -5,6 +5,7 @@ import (
 	"github.com/xiaozefeng/apiserver/handler/sd"
 	"github.com/xiaozefeng/apiserver/router/middleware"
 	"net/http"
+	"github.com/xiaozefeng/apiserver/handler/user"
 )
 
 func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
@@ -18,6 +19,11 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	g.NoRoute(func(context *gin.Context) {
 		context.String(http.StatusNotFound, "The incorrect API route")
 	})
+
+	u := g.Group("/v1/user")
+	{
+		u.POST("", user.Create)
+	}
 
 	// the health check handlers
 	group := g.Group("/sd")
