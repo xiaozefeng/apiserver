@@ -3,11 +3,11 @@ package main
 import (
 	"errors"
 	"github.com/gin-gonic/gin"
+	"github.com/lexkong/log"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	"github.com/xiaozefeng/apiserver/config"
 	"github.com/xiaozefeng/apiserver/router"
-	"log"
 	"net/http"
 	"time"
 )
@@ -24,7 +24,6 @@ func main() {
 	}
 	// set gin mode
 	gin.SetMode(viper.GetString("runmode"))
-
 	// Create the  Gin engine.
 	g := gin.New()
 
@@ -43,10 +42,10 @@ func main() {
 		if err := pingServer(); err != nil {
 			log.Fatal("The router has no resoonse, or it might took too long to start up.", err)
 		}
-		log.Print("The router has been deployed successfully")
+		log.Info("The router has been deployed successfully")
 	}()
-	log.Printf("Start to listening the incoming requests on http address: %s", viper.GetString("addr"))
-	log.Printf(http.ListenAndServe(viper.GetString("addr"), g).Error())
+	log.Infof("Start to listening the incoming requests on http address: %s", viper.GetString("addr"))
+	log.Info(http.ListenAndServe(viper.GetString("addr"), g).Error())
 
 }
 
@@ -60,8 +59,8 @@ func pingServer() error {
 		}
 
 		// Sleep for a second to continue the next ping.
-		log.Print("Waiting for the router, retry in 1 second")
+		log.Info("Waiting for the router, retry in 1 second")
 		time.Sleep(time.Second)
 	}
-	return errors.New("Connot connect to the router.")
+	return errors.New("Cannot connect to the router.")
 }
