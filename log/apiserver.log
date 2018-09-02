@@ -168,3 +168,13 @@
 {"level":"INFO","timestamp":"2018-09-02 16:32:57.190","file":"apiserver/main.go:55","msg":"Start to listening the incoming requests on https address: :8081"}
 {"level":"INFO","timestamp":"2018-09-02 16:32:57.193","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
 {"level":"INFO","timestamp":"2018-09-02 16:33:13.740","file":"middleware/logging.go:81","msg":"82.762ms      | 127.0.0.1    | POST /login | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 17:27:05.496","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 17:27:05.499","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 17:27:05.501","file":"apiserver/main.go:76","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 17:27:05.501","file":"apiserver/main.go:72","msg":"Start to listening the incoming requests on https address: :8081"}
+{"level":"INFO","timestamp":"2018-09-02 17:27:05.502","file":"apiserver/main.go:66","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 17:27:18.704","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 17:27:18.709","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 17:27:18.712","file":"apiserver/main.go:76","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 17:27:18.713","file":"apiserver/main.go:72","msg":"Start to listening the incoming requests on https address: :8081"}
+{"level":"INFO","timestamp":"2018-09-02 17:27:18.714","file":"apiserver/main.go:66","msg":"The router has been deployed successfully"}
