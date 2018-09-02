@@ -6,7 +6,7 @@ import "testing"
 // go test -v -count=10 . 执行10次测试
 func TestGenShortId(t *testing.T) {
 	shortId, err := GenShortId()
-	if shortId == "" ||  err != nil {
+	if shortId == "" || err != nil {
 		t.Errorf("genShortId failed, %v", err)
 	}
 }
@@ -36,4 +36,3 @@ func BenchmarkGenShortIdConsuming(b *testing.B) {
 		GenShortId()
 	}
 }
-
