@@ -1,25 +1,42 @@
 package main
 
 import (
+	"encoding/json"
 	"errors"
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/lexkong/log"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	"github.com/xiaozefeng/apiserver/config"
 	"github.com/xiaozefeng/apiserver/model"
+	v "github.com/xiaozefeng/apiserver/pkg/version"
 	"github.com/xiaozefeng/apiserver/router"
 	"github.com/xiaozefeng/apiserver/router/middleware"
 	"net/http"
+	"os"
 	"time"
 )
 
 var (
-	cfg = pflag.StringP("config", "c", "", "apiserver config file path.")
+	cfg     = pflag.StringP("config", "c", "", "apiserver config file path.")
+	version = pflag.BoolP("version", "v", false, "show version info.")
 )
 
 func main() {
 	pflag.Parse()
+	if *version {
+		v := v.Get()
+		marshaled, err := json.MarshalIndent(&v, "", "  ")
+		if err != nil {
+			fmt.Printf("%v\n", err)
+			os.Exit(1)
+		}
+
+		fmt.Println(string(marshaled))
+		return
+	}
+
 	// init config
 	if err := config.Init(*cfg); err != nil {
 		panic(err)
