@@ -1,16 +1,16 @@
 package middleware
 
 import (
-	"github.com/gin-gonic/gin"
 	"bytes"
-	"time"
-	"regexp"
-	"io/ioutil"
-	"github.com/xiaozefeng/apiserver/handler"
 	"encoding/json"
+	"github.com/gin-gonic/gin"
 	"github.com/lexkong/log"
-	"github.com/xiaozefeng/apiserver/pkg/errno"
 	"github.com/willf/pad"
+	"github.com/xiaozefeng/apiserver/handler"
+	"github.com/xiaozefeng/apiserver/pkg/errno"
+	"io/ioutil"
+	"regexp"
+	"time"
 )
 
 type bodyLogWriter struct {
@@ -27,7 +27,7 @@ func (w bodyLogWriter) Write(b []byte) (int, error) {
 func Logging() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		start := time.Now().UTC()
-		path:= c.Request.URL.Path
+		path := c.Request.URL.Path
 
 		reg := regexp.MustCompile("(/v1/user|/login)")
 		if !reg.MatchString(path) {
@@ -42,19 +42,18 @@ func Logging() gin.HandlerFunc {
 		// Read the Body content
 		var bodyBytes []byte
 		if c.Request.Body != nil {
-			bodyBytes , _ = ioutil.ReadAll(c.Request.Body)
+			bodyBytes, _ = ioutil.ReadAll(c.Request.Body)
 		}
 
 		// Restore the io.ReadCloser to its original state
 		c.Request.Body = ioutil.NopCloser(bytes.NewBuffer(bodyBytes))
-
 
 		// The basic infomations.
 		method := c.Request.Method
 		ip := c.ClientIP()
 
 		blw := &bodyLogWriter{
-			body:bytes.NewBufferString(""),
+			body:           bytes.NewBufferString(""),
 			ResponseWriter: c.Writer,
 		}
 		c.Writer = blw
@@ -73,7 +72,7 @@ func Logging() gin.HandlerFunc {
 			log.Errorf(err, "response can not unmarshal to model.Response struct , body :%s", blw.body.Bytes())
 			code = errno.InternalServerError.Code
 			message = errno.InternalServerError.Message
-		} else{
+		} else {
 			code = response.Code
 			message = response.Message
 		}
@@ -81,5 +80,3 @@ func Logging() gin.HandlerFunc {
 		log.Infof("%-13s | %-12s | %s %s | {code: %d, message: %s}", latency, ip, pad.Right(method, 5, ""), path, code, message)
 	}
 }
-
-

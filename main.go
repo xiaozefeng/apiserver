@@ -9,9 +9,9 @@ import (
 	"github.com/xiaozefeng/apiserver/config"
 	"github.com/xiaozefeng/apiserver/model"
 	"github.com/xiaozefeng/apiserver/router"
+	"github.com/xiaozefeng/apiserver/router/middleware"
 	"net/http"
 	"time"
-	"github.com/xiaozefeng/apiserver/router/middleware"
 )
 
 var (
@@ -50,10 +50,10 @@ func main() {
 	}()
 	cert := viper.GetString("tls.cert")
 	key := viper.GetString("tls.key")
-	if cert !="" && key !="" {
+	if cert != "" && key != "" {
 		go func() {
 			log.Infof("Start to listening the incoming requests on https address: %s", viper.GetString("tls.addr"))
-			log.Info(http.ListenAndServeTLS(viper.GetString("tls.addr"),cert, key, g).Error())
+			log.Info(http.ListenAndServeTLS(viper.GetString("tls.addr"), cert, key, g).Error())
 		}()
 	}
 	log.Infof("Start to listening the incoming requests on http address: %s", viper.GetString("addr"))

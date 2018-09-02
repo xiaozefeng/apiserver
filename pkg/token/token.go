@@ -46,7 +46,7 @@ func Parse(tokenString, secret string) (*Context, error) {
 		ctx.ID = uint64(claims["id"].(float64))
 		ctx.Username = claims["username"].(string)
 		return ctx, nil
-	}else {
+	} else {
 		return ctx, err
 	}
 }

@@ -63,7 +63,6 @@ func (u *UserModel) Compare(pwd string) error {
 	return auth.Compare(u.Password, pwd)
 }
 
-
 // Encrypt the user password.
 func (u *UserModel) Encrypt() (err error) {
 	u.Password, err = auth.Encrypt(u.Password)
