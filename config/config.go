@@ -5,7 +5,6 @@ import (
 	"github.com/lexkong/log"
 	"github.com/spf13/viper"
 	"strings"
-
 )
 
 type Config struct {

@@ -3,9 +3,9 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/xiaozefeng/apiserver/handler/sd"
+	"github.com/xiaozefeng/apiserver/handler/user"
 	"github.com/xiaozefeng/apiserver/router/middleware"
 	"net/http"
-	"github.com/xiaozefeng/apiserver/handler/user"
 )
 
 func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
@@ -22,7 +22,11 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 
 	u := g.Group("/v1/user")
 	{
-		u.POST("/:username", user.Create)
+		u.POST("", user.Create)
+		u.DELETE("/:id", user.Delete)
+		u.PUT("/:id", user.Update)
+		u.GET("", user.List)
+		u.GET("/:username", user.Get)
 	}
 
 	// the health check handlers

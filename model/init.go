@@ -3,9 +3,9 @@ package model
 import (
 	"fmt"
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/lexkong/log"
 	"github.com/spf13/viper"
-	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 type Database struct {

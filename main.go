@@ -7,10 +7,10 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	"github.com/xiaozefeng/apiserver/config"
+	"github.com/xiaozefeng/apiserver/model"
 	"github.com/xiaozefeng/apiserver/router"
 	"net/http"
 	"time"
-	"github.com/xiaozefeng/apiserver/model"
 )
 
 var (
