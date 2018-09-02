@@ -156,3 +156,15 @@
 {"level":"INFO","timestamp":"2018-09-02 15:06:06.010","file":"token/token.go:58","msg":"auth header:Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4NzE5MjcsImlkIjoyLCJuYmYiOjE1MzU4NzE5MjcsInVzZXJuYW1lIjoiYWRtaW4ifQ.GBBvKmEcGR_ZOm12u7ilcu6PsAmIsyMOWZ5iPZLBgVg"}
 {"level":"INFO","timestamp":"2018-09-02 15:06:06.010","file":"token/token.go:69","msg":"token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4NzE5MjcsImlkIjoyLCJuYmYiOjE1MzU4NzE5MjcsInVzZXJuYW1lIjoiYWRtaW4ifQ.GBBvKmEcGR_ZOm12u7ilcu6PsAmIsyMOWZ5iPZLBgVg"}
 {"level":"INFO","timestamp":"2018-09-02 15:06:06.024","file":"middleware/logging.go:81","msg":"14.402ms      | ::1          | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 16:27:48.493","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 16:27:48.501","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 16:27:48.502","file":"apiserver/main.go:59","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 16:27:48.502","file":"apiserver/main.go:55","msg":"Start to listening the incoming requests on https address: 8081"}
+{"level":"INFO","timestamp":"2018-09-02 16:27:48.502","file":"apiserver/main.go:56","msg":"listen tcp: address 8081: missing port in address"}
+{"level":"INFO","timestamp":"2018-09-02 16:27:48.505","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 16:32:57.185","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 16:32:57.189","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 16:32:57.190","file":"apiserver/main.go:59","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 16:32:57.190","file":"apiserver/main.go:55","msg":"Start to listening the incoming requests on https address: :8081"}
+{"level":"INFO","timestamp":"2018-09-02 16:32:57.193","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 16:33:13.740","file":"middleware/logging.go:81","msg":"82.762ms      | 127.0.0.1    | POST /login | {code: 0, message: OK}"}
