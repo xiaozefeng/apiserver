@@ -11,6 +11,7 @@ import (
 	"github.com/xiaozefeng/apiserver/router"
 	"net/http"
 	"time"
+	"github.com/xiaozefeng/apiserver/router/middleware"
 )
 
 var (
@@ -31,14 +32,13 @@ func main() {
 	// Create the  Gin engine.
 	g := gin.New()
 
-	middlewares := []gin.HandlerFunc{}
-
 	// Routers
 	g = router.Load(
 		// Cores
 		g,
 		// Middleware
-		middlewares...,
+		middleware.RequestId(),
+		middleware.Logging(),
 	)
 
 	// Ping the sever to make sure the router is working

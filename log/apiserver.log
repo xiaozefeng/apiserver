@@ -55,3 +55,22 @@
 {"level":"INFO","timestamp":"2018-09-02 10:32:27.394","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
 {"level":"INFO","timestamp":"2018-09-02 10:32:33.781","file":"user/create.go:14","msg":"User Create function called. ","data":{"X-Request-Id":""}}
 {"level":"INFO","timestamp":"2018-09-02 10:34:24.812","file":"user/create.go:14","msg":"User Create function called. ","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2018-09-02 11:48:28.829","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 11:48:28.836","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 11:48:28.837","file":"apiserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 11:48:28.840","file":"apiserver/main.go:48","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 11:49:43.701","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 11:49:43.706","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 11:49:43.718","file":"apiserver/main.go:50","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 11:49:43.724","file":"apiserver/main.go:48","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 11:49:52.474","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 11:49:52.480","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 11:49:52.483","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 11:49:52.490","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 11:49:57.994","file":"middleware/logging.go:81","msg":"5.522ms       | ::1          | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 11:50:14.821","file":"middleware/logging.go:81","msg":"4.93ms        | ::1          | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 11:50:15.215","file":"middleware/logging.go:81","msg":"2.526ms       | ::1          | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 11:50:15.604","file":"middleware/logging.go:81","msg":"4.731ms       | ::1          | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 11:50:15.931","file":"middleware/logging.go:81","msg":"2.713ms       | ::1          | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 11:50:16.312","file":"middleware/logging.go:81","msg":"4.142ms       | ::1          | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 11:50:16.677","file":"middleware/logging.go:81","msg":"2.912ms       | ::1          | GET /v1/user | {code: 0, message: OK}"}
