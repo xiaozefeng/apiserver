@@ -26,16 +26,19 @@ func Create(c *gin.Context) {
 	// Validate the data.
 	if err := u.Validate(); err != nil {
 		handler.SendResponse(c, errno.ErrValidation, nil)
+		return
 	}
 
 	// Encrypt the user password
 	if err := u.Encrypt(); err != nil {
 		handler.SendResponse(c, errno.ErrDatabase, nil)
+		return
 	}
 
 	// Insert the user to the database
 	if err := u.Create(); err != nil {
 		handler.SendResponse(c, errno.ErrDatabase, nil)
+		return
 	}
 
 	resp := CreateResponse{
@@ -44,5 +47,4 @@ func Create(c *gin.Context) {
 
 	// Show the user information.
 	handler.SendResponse(c, nil, resp)
-
 }

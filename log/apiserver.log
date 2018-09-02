@@ -74,3 +74,85 @@
 {"level":"INFO","timestamp":"2018-09-02 11:50:15.931","file":"middleware/logging.go:81","msg":"2.713ms       | ::1          | GET /v1/user | {code: 0, message: OK}"}
 {"level":"INFO","timestamp":"2018-09-02 11:50:16.312","file":"middleware/logging.go:81","msg":"4.142ms       | ::1          | GET /v1/user | {code: 0, message: OK}"}
 {"level":"INFO","timestamp":"2018-09-02 11:50:16.677","file":"middleware/logging.go:81","msg":"2.912ms       | ::1          | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 12:34:46.390","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 12:34:46.398","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 12:34:46.403","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 12:34:46.406","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 12:34:51.024","file":"middleware/logging.go:81","msg":"211µs         | ::1          | GET /v1/user | {code: 20103, message: The token wa invalid.}"}
+{"level":"INFO","timestamp":"2018-09-02 12:35:21.940","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 12:35:21.947","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 12:35:21.950","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 12:35:21.952","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 14:21:48.674","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:21:48.678","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:21:48.680","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 14:21:48.684","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 14:21:52.572","file":"middleware/logging.go:81","msg":"95.396ms      | ::1          | POST /login | {code: 20003, message: Error occurred while signing the JSON web token}"}
+{"level":"INFO","timestamp":"2018-09-02 14:22:54.189","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:22:54.191","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:22:54.192","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 14:22:54.193","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 14:25:20.694","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:25:20.697","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:25:20.698","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 14:25:20.700","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 14:25:22.455","file":"middleware/logging.go:81","msg":"82.12ms       | 127.0.0.1    | POST /login | {code: 20003, message: Error occurred while signing the JSON web token}"}
+{"level":"INFO","timestamp":"2018-09-02 14:26:17.604","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:26:17.606","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:26:17.610","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 14:26:17.614","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 14:26:19.524","file":"middleware/logging.go:81","msg":"78.258ms      | 127.0.0.1    | POST /login | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 14:27:20.165","file":"middleware/logging.go:81","msg":"135µs         | ::1          | POST /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2018-09-02 14:28:25.976","file":"middleware/logging.go:81","msg":"16.578762s    | ::1          | POST /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2018-09-02 14:28:53.312","file":"middleware/logging.go:81","msg":"249µs         | ::1          | POST /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2018-09-02 14:28:56.252","file":"middleware/logging.go:81","msg":"181µs         | ::1          | POST /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2018-09-02 14:32:02.162","file":"middleware/logging.go:81","msg":"107µs         | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2018-09-02 14:33:02.099","file":"middleware/logging.go:81","msg":"121µs         | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2018-09-02 14:51:40.976","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:51:40.979","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:51:40.980","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 14:51:40.983","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 14:51:58.958","file":"token/token.go:57","msg":"auth header:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4Njk1NzksImlkIjoyLCJuYmYiOjE1MzU4Njk1NzksInVzZXJuYW1lIjoiYWRtaW4ifQ.y0mRybpbvzqMiVZll1P6_y0jdMkX7JBS_NJePmQl8Jo"}
+{"level":"INFO","timestamp":"2018-09-02 14:52:32.590","file":"token/token.go:57","msg":"auth header:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4Njk1NzksImlkIjoyLCJuYmYiOjE1MzU4Njk1NzksInVzZXJuYW1lIjoiYWRtaW4ifQ.y0mRybpbvzqMiVZll1P6_y0jdMkX7JBS_NJePmQl8Jo"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:07.336","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:07.338","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:07.339","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:07.342","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:21.578","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:21.581","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:21.582","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:21.585","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:26.442","file":"token/token.go:58","msg":"auth header:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4Njk1NzksImlkIjoyLCJuYmYiOjE1MzU4Njk1NzksInVzZXJuYW1lIjoiYWRtaW4ifQ.y0mRybpbvzqMiVZll1P6_y0jdMkX7JBS_NJePmQl8Jo"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:59.166","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:59.168","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:59.170","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 14:54:59.172","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 14:55:02.023","file":"middleware/logging.go:81","msg":"77.597ms      | 127.0.0.1    | POST /login | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 14:55:25.519","file":"token/token.go:58","msg":"auth header:Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4NzEzMDIsImlkIjoyLCJuYmYiOjE1MzU4NzEzMDIsInVzZXJuYW1lIjoiYWRtaW4ifQ.tPYESmfzJc-tdS79h5__oivpiRjcRzeERyVDJOvC9bc"}
+{"level":"INFO","timestamp":"2018-09-02 14:58:19.637","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:58:19.639","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 14:58:19.640","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 14:58:19.642","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 14:58:25.396","file":"middleware/logging.go:81","msg":"85.674ms      | ::1          | POST /login | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 14:58:38.191","file":"token/token.go:58","msg":"auth header:Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4NzE1MDUsImlkIjoyLCJuYmYiOjE1MzU4NzE1MDUsInVzZXJuYW1lIjoiYWRtaW4ifQ.UioCMiQv1t8IUcH_KSbBmP6_19lHZSOFwKf2lGwI1II"}
+{"level":"INFO","timestamp":"2018-09-02 14:58:38.191","file":"token/token.go:69","msg":"token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4NzE1MDUsImlkIjoyLCJuYmYiOjE1MzU4NzE1MDUsInVzZXJuYW1lIjoiYWRtaW4ifQ.UioCMiQv1t8IUcH_KSbBmP6_19lHZSOFwKf2lGwI1II"}
+{"level":"INFO","timestamp":"2018-09-02 14:58:38.191","file":"user/create.go:14","msg":"User Create function called. ","data":{"X-Request-Id":"8168067e-1e3c-4974-8e6c-930103106520"}}
+{"level":"ERROR","timestamp":"2018-09-02 14:58:38.275","file":"middleware/logging.go:73","msg":"response can not unmarshal to model.Response struct , body :{\"code\":20002,\"message\":\"Database error\",\"data\":null}{\"code\":0,\"message\":\"OK\",\"data\":{\"username\":\"admin\"}}","data":{"error":"invalid character '{' after top-level value"}}
+{"level":"INFO","timestamp":"2018-09-02 14:58:38.275","file":"middleware/logging.go:81","msg":"84.673ms      | ::1          | POST /v1/user | {code: 10001, message: Internal server error.}"}
+{"level":"INFO","timestamp":"2018-09-02 15:02:28.409","file":"token/token.go:58","msg":"auth header:Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4NzE1MDUsImlkIjoyLCJuYmYiOjE1MzU4NzE1MDUsInVzZXJuYW1lIjoiYWRtaW4ifQ.UioCMiQv1t8IUcH_KSbBmP6_19lHZSOFwKf2lGwI1II"}
+{"level":"INFO","timestamp":"2018-09-02 15:02:28.409","file":"token/token.go:69","msg":"token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4NzE1MDUsImlkIjoyLCJuYmYiOjE1MzU4NzE1MDUsInVzZXJuYW1lIjoiYWRtaW4ifQ.UioCMiQv1t8IUcH_KSbBmP6_19lHZSOFwKf2lGwI1II"}
+{"level":"INFO","timestamp":"2018-09-02 15:02:28.410","file":"user/create.go:14","msg":"User Create function called. ","data":{"X-Request-Id":"da71bd32-1fa0-4fc1-a793-708b56e9abe8"}}
+{"level":"ERROR","timestamp":"2018-09-02 15:02:28.513","file":"middleware/logging.go:73","msg":"response can not unmarshal to model.Response struct , body :{\"code\":20002,\"message\":\"Database error\",\"data\":null}{\"code\":0,\"message\":\"OK\",\"data\":{\"username\":\"admin\"}}","data":{"error":"invalid character '{' after top-level value"}}
+{"level":"INFO","timestamp":"2018-09-02 15:02:28.513","file":"middleware/logging.go:81","msg":"104.068ms     | ::1          | POST /v1/user | {code: 10001, message: Internal server error.}"}
+{"level":"INFO","timestamp":"2018-09-02 15:05:22.478","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 15:05:22.480","file":"model/init.go:26","msg":"openDB config: root:root@tcp(127.0.0.1:3306)/db_apiserver?charset=utf8\u0026parseTime=true\u0026loc=Local"}
+{"level":"INFO","timestamp":"2018-09-02 15:05:22.481","file":"apiserver/main.go:51","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2018-09-02 15:05:22.482","file":"apiserver/main.go:49","msg":"The router has been deployed successfully"}
+{"level":"INFO","timestamp":"2018-09-02 15:05:27.816","file":"middleware/logging.go:81","msg":"83.614ms      | ::1          | POST /login | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2018-09-02 15:05:39.378","file":"token/token.go:58","msg":"auth header:Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4NzE5MjcsImlkIjoyLCJuYmYiOjE1MzU4NzE5MjcsInVzZXJuYW1lIjoiYWRtaW4ifQ.GBBvKmEcGR_ZOm12u7ilcu6PsAmIsyMOWZ5iPZLBgVg"}
+{"level":"INFO","timestamp":"2018-09-02 15:05:39.379","file":"token/token.go:69","msg":"token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4NzE5MjcsImlkIjoyLCJuYmYiOjE1MzU4NzE5MjcsInVzZXJuYW1lIjoiYWRtaW4ifQ.GBBvKmEcGR_ZOm12u7ilcu6PsAmIsyMOWZ5iPZLBgVg"}
+{"level":"INFO","timestamp":"2018-09-02 15:05:39.379","file":"user/create.go:14","msg":"User Create function called. ","data":{"X-Request-Id":"aec39e9f-a2f9-42d0-8113-fb5bdc5bb837"}}
+{"level":"INFO","timestamp":"2018-09-02 15:05:39.464","file":"middleware/logging.go:81","msg":"85.892ms      | ::1          | POST /v1/user | {code: 20002, message: Database error}"}
+{"level":"INFO","timestamp":"2018-09-02 15:06:06.010","file":"token/token.go:58","msg":"auth header:Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4NzE5MjcsImlkIjoyLCJuYmYiOjE1MzU4NzE5MjcsInVzZXJuYW1lIjoiYWRtaW4ifQ.GBBvKmEcGR_ZOm12u7ilcu6PsAmIsyMOWZ5iPZLBgVg"}
+{"level":"INFO","timestamp":"2018-09-02 15:06:06.010","file":"token/token.go:69","msg":"token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MzU4NzE5MjcsImlkIjoyLCJuYmYiOjE1MzU4NzE5MjcsInVzZXJuYW1lIjoiYWRtaW4ifQ.GBBvKmEcGR_ZOm12u7ilcu6PsAmIsyMOWZ5iPZLBgVg"}
+{"level":"INFO","timestamp":"2018-09-02 15:06:06.024","file":"middleware/logging.go:81","msg":"14.402ms      | ::1          | GET /v1/user | {code: 0, message: OK}"}
